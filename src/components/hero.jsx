@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../assets/mypic.jpg";
+import {Typewriter} from 'react-simple-typewriter';
 
 const user = {
   name: "Rosalin Nayak",
@@ -21,6 +22,21 @@ const Hero = () => {
 
           <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-400 dark:from-green-400 dark:to-blue-300">
             I'm {user.name}
+          </h2>
+
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-400 dark:from-green-400 dark:to-blue-300">
+            {''}
+            <span>
+              <Typewriter
+              words={['Software Developer','Web developer','Tech Enthusiast']}
+              loop={true}
+              cursor
+              cursorStyle="_"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+              />
+            </span>
           </h2>
 
           <p className="text-gray-700 dark:text-gray-300 mb-8 max-w-md">
