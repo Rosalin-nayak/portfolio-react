@@ -20,7 +20,7 @@ const Hero = () => {
             {user.welcomeMessage}
           </h1>
 
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-400 dark:from-green-400 dark:to-blue-300">
+          <h2 data-aos="fade-up" className="text-2xl md:text-3xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-400 dark:from-green-400 dark:to-blue-300">
             I'm {user.name}
           </h2>
 
@@ -28,7 +28,7 @@ const Hero = () => {
             {''}
             <span>
               <Typewriter
-              words={['Software Developer','Web developer','Tech Enthusiast']}
+              words={['Software Developer','Web Developer','Tech Enthusiast']}
               loop={true}
               cursor
               cursorStyle="_"
@@ -51,7 +51,7 @@ const Hero = () => {
           </a>
         </div>
 
-        <div className="md:w-1/2 flex justify-center">
+        <div data-aos="zoom-out" className="md:w-1/2 flex justify-center">
           <img
             src={image}
             alt="Profile"

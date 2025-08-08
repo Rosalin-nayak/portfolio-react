@@ -1,7 +1,7 @@
 import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import 'react-circular-progressbar/dist/styles.css';
-import myImage from "../assets/mypic.jpg"; 
+
 
 const techSkills = [
   { name: "HTML,CSS & Javascript", level: 90 },
@@ -30,8 +30,8 @@ const Skills = () => {
           <h3 className="text-2xl font-semibold mb-6 text-green-500">Technical Skills</h3>
           <div className="space-y-4">
             {techSkills.map((skill, index) => (
-              <div key={index}>
-                <div className="flex justify-between mb-1">
+              <div  key={index}>
+                <div data-aos="fade-up" className="flex justify-between mb-1">
                   <span>{skill.name}</span>
                 </div>
                 <div className="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-3">

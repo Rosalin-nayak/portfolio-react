@@ -42,6 +42,7 @@ const Service = () => {
           {services.map((servicee) => (
             <div
               key={servicee.id}
+              data-aos="flip-left"
               className="bg-gray-100 dark:bg-gray-900 px-6 pb-6 rounded-lg hover:shadow-lg transform transition-transform duration-300 hover:scale-105"
             >
               <br />
